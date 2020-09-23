@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myprojectmusic/view/kuis.dart';
+import 'package:myprojectmusic/view/kunci.dart';
 import 'package:myprojectmusic/view/pengenalan.dart';
 
 class Home extends StatefulWidget {
@@ -9,62 +11,87 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Jago Musik"),
-      ),
-      body: Container(
-        color: Colors.black,
-        alignment: Alignment.center,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            GestureDetector(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Pengenalan()));
-              },
-              child: Container(
-                height: 150.0,
-                width: 150.0,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                  image: DecorationImage(
-                      image: AssetImage("assets/menu1.png"), fit: BoxFit.cover),
-                ),
-              ),
+    return Stack(
+      // <-- STACK AS THE SCAFFOLD PARENT
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image:
+                  AssetImage("assets/background.png"), // <-- BACKGROUND IMAGE
+              fit: BoxFit.cover,
             ),
-            GestureDetector(
-              onTap: () {},
-              child: Container(
-                height: 150.0,
-                width: 150.0,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                  image: DecorationImage(
-                      image: AssetImage("assets/menu2.png"), fit: BoxFit.cover),
-                ),
-              ),
-            ),
-            GestureDetector(
-              onTap: () {},
-              child: Container(
-                height: 150.0,
-                width: 150.0,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                  image: DecorationImage(
-                      image: AssetImage("assets/menu3.png"), fit: BoxFit.cover),
-                ),
-              ),
-            ),
-          ],
+          ),
         ),
-      ),
+        Scaffold(
+          backgroundColor:
+              Colors.transparent, // <-- SCAFFOLD WITH TRANSPARENT BG
+          appBar: AppBar(
+            title: Text(''),
+            backgroundColor:
+                Colors.transparent, // <-- APPBAR WITH TRANSPARENT BG
+            elevation: 0, // <-- ELEVATION ZEROED
+          ),
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Pengenalan()));
+                  },
+                  child: Container(
+                    height: 150.0,
+                    width: 150.0,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      image: DecorationImage(
+                          image: AssetImage("assets/menu1.png"),
+                          fit: BoxFit.cover),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Kunci()));
+                  },
+                  child: Container(
+                    height: 150.0,
+                    width: 150.0,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      image: DecorationImage(
+                          image: AssetImage("assets/menu2.png"),
+                          fit: BoxFit.cover),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => Kuis()));
+                  },
+                  child: Container(
+                    height: 150.0,
+                    width: 150.0,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      image: DecorationImage(
+                          image: AssetImage("assets/menu3.png"),
+                          fit: BoxFit.cover),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
