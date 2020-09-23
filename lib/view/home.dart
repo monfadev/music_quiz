@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:myprojectmusic/view/kuis.dart';
+import 'package:myprojectmusic/view/homekuis.dart';
 import 'package:myprojectmusic/view/kunci.dart';
 import 'package:myprojectmusic/view/pengenalan.dart';
+import 'package:myprojectmusic/view/settings.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -27,7 +28,16 @@ class _HomeState extends State<Home> {
           backgroundColor:
               Colors.transparent, // <-- SCAFFOLD WITH TRANSPARENT BG
           appBar: AppBar(
-            title: Text(''),
+            actions: [
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Settings()));
+                },
+                child: Icon(Icons.settings),
+              ),
+              Icon(Icons.settings, color: Colors.transparent),
+            ],
             backgroundColor:
                 Colors.transparent, // <-- APPBAR WITH TRANSPARENT BG
             elevation: 0, // <-- ELEVATION ZEROED
@@ -73,7 +83,7 @@ class _HomeState extends State<Home> {
                 GestureDetector(
                   onTap: () {
                     Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => Kuis()));
+                        MaterialPageRoute(builder: (context) => HomeKuis()));
                   },
                   child: Container(
                     height: 150.0,

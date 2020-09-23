@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-
 import 'package:myprojectmusic/view/home.dart';
 
 void main() {
