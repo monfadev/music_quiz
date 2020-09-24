@@ -24,6 +24,7 @@ class _KunciState extends State<Kunci> {
           backgroundColor:
               Colors.transparent, // <-- SCAFFOLD WITH TRANSPARENT BG
           appBar: AppBar(
+            centerTitle: true,
             title: Text(
               'Kunci Gitar',
               style: TextStyle(),

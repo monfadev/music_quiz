@@ -34,12 +34,11 @@ class _HomeKuisState extends State<HomeKuis> {
 
   var pertanyaan = [
     {
-      'teksPertanyaan': 'Gambar berikut merupakan kunci?',
-      'image': 'assets/gitarelektrik.png',
+      'teksPertanyaan': 'Ada berapa senar pada alat music gitar?',
       'teksJawaban': [
-        {'teks': 'Kunci C', 'score': 10},
-        {'teks': 'Kunci D', 'score': 0},
-        {'teks': 'Kunci A', 'score': 0}
+        {'teks': '6 Senar', 'score': 10},
+        {'teks': '5 Senar', 'score': 0},
+        {'teks': '4 Senar', 'score': 0}
       ]
     },
     {
@@ -51,11 +50,12 @@ class _HomeKuisState extends State<HomeKuis> {
       ]
     },
     {
-      'teksPertanyaan': 'Apa nama bagian pada gambar berikut?',
+      'teksPertanyaan':
+          'Sejenis gitar yang menggunakan beberapa pickup untuk mengubah bunyi atau getaran dari string gitar menjadi arus listrik yang akan dikuatkan kembali dengan menggunakan seperangkat amplifier dan loud speaker, disebut gitar?',
       'teksJawaban': [
-        {'teks': 'Fret', 'score': 0},
-        {'teks': 'Body', 'score': 0},
-        {'teks': 'Tuning Pegs', 'score': 10}
+        {'teks': 'Gitar Akustik', 'score': 0},
+        {'teks': 'Gitar Klasik', 'score': 0},
+        {'teks': 'Gitar Elektrik', 'score': 10}
       ]
     },
     {
@@ -67,35 +67,35 @@ class _HomeKuisState extends State<HomeKuis> {
       ]
     },
     {
-      'teksPertanyaan': 'Gitar diatas merupakan tipe gitar?',
+      'teksPertanyaan': 'Gitar elektrik menggunakan jenis senar ? ',
       'teksJawaban': [
-        {'teks': 'Gitar Akustik', 'score': 0},
-        {'teks': 'Gitar Elektrik', 'score': 10},
-        {'teks': 'Gitar Akustik', 'score': 0}
+        {'teks': 'Nylon', 'score': 0},
+        {'teks': 'Steel-String', 'score': 10},
+        {'teks': 'Baja', 'score': 0}
       ]
     },
     {
-      'teksPertanyaan': 'Gambar berikut merupakan kunci?',
+      'teksPertanyaan': 'Nama senar ke enam pada gitar disebut?',
       'teksJawaban': [
-        {'teks': 'Senar C', 'score': 0},
         {'teks': 'Senar A', 'score': 0},
-        {'teks': 'Senar D', 'score': 10}
+        {'teks': 'Senar E', 'score': 10},
+        {'teks': 'Senar D', 'score': 0}
       ]
     },
     {
-      'teksPertanyaan': 'Gitar diatas merupakan tipe gitar?',
+      'teksPertanyaan': 'Gitar Akustik menggunakan jenis senar?',
       'teksJawaban': [
-        {'teks': 'Gitar Klasik', 'score': 10},
-        {'teks': 'Gitar Elektik', 'score': 0},
-        {'teks': 'Gitar Akustik', 'score': 0}
+        {'teks': 'Baja', 'score': 0},
+        {'teks': 'Steel-String', 'score': 0},
+        {'teks': 'Nylon', 'score': 10}
       ]
     },
     {
-      'teksPertanyaan': 'Gambar berikut merupakan kunci?',
+      'teksPertanyaan': 'Senar D pada gitar berada diurutan?',
       'teksJawaban': [
-        {'teks': 'Senar D', 'score': 0},
-        {'teks': 'Senar A', 'score': 10},
-        {'teks': 'Senar C', 'score': 0}
+        {'teks': 'Senar 4', 'score': 10},
+        {'teks': 'Senar 5', 'score': 0},
+        {'teks': 'Senar 6', 'score': 0}
       ]
     },
     {

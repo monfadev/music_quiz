@@ -21,6 +21,7 @@ class _PengenalanState extends State<Pengenalan> {
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
+            centerTitle: true,
             title: Text(
               'Pengenalan Alat Gitar',
               style: TextStyle(),
@@ -65,6 +66,30 @@ class _PengenalanState extends State<Pengenalan> {
                       borderRadius: BorderRadius.all(Radius.circular(30.0)),
                       image: DecorationImage(
                           image: AssetImage("assets/pengenalan3.png"),
+                          fit: BoxFit.cover),
+                    ),
+                  ),
+                  SizedBox(height: 20.0),
+                  Container(
+                    height: 250.0,
+                    width: 320.0,
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                      image: DecorationImage(
+                          image: AssetImage("assets/kunci2.jpeg"),
+                          fit: BoxFit.cover),
+                    ),
+                  ),
+                  SizedBox(height: 20.0),
+                  Container(
+                    height: 300.0,
+                    width: 320.0,
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                      image: DecorationImage(
+                          image: AssetImage("assets/kunci3.jpeg"),
                           fit: BoxFit.cover),
                     ),
                   ),

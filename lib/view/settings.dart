@@ -55,6 +55,12 @@ class _SettingsState extends State<Settings> {
                     },
                   ),
                 ),
+                Container(
+                  child: Text(
+                    "Created by : Gamaliel Alfa Ginola",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
               ],
             ),
           ),
