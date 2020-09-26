@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myprojectmusic/view/hasil.dart';
+import 'package:myprojectmusic/view/home.dart';
 import 'package:myprojectmusic/view/kuisbaru.dart';
 
 class HomeKuis extends StatefulWidget {
@@ -147,6 +148,35 @@ class _HomeKuisState extends State<HomeKuis> {
                   pertanyaanIndex: pertanyaanIndex,
                 )
               : Hasil(totalScore, _cobaLagi),
+        ),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Center(
+              child: Container(
+                padding: EdgeInsets.only(top: 650.0),
+                child: RaisedButton(
+                  onPressed: () {
+                    pertanyaan.shuffle();
+                    setState(() {});
+                  },
+                  child: Text("Acak Kuis"),
+                ),
+              ),
+            ),
+            Center(
+              child: Container(
+                child: RaisedButton(
+                  color: Colors.red,
+                  onPressed: () {
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => Home()));
+                  },
+                  child: Text("Back To Home"),
+                ),
+              ),
+            ),
+          ],
         ),
       ],
     );

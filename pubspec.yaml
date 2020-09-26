@@ -53,6 +53,13 @@ flutter:
       - assets/
       - assets/mymusic.mp3
       - assets/backsound.mp3
+      - assets/kunci_a.mp3
+      - assets/kunci_b.mp3
+      - assets/kunci_c.mp3
+      - assets/kunci_d.mp3
+      - assets/kunci_e.mp3
+      - assets/kunci_f.mp3
+      - assets/kunci_g.mp3
       - assets/background.png
       - assets/pengenalan1.png
       - assets/pengenalan2.png

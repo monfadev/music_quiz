@@ -34,6 +34,20 @@ class _PengenalanState extends State<Pengenalan> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
+                  Center(
+                    child: Container(
+                      padding: EdgeInsets.only(top: 10.0),
+                      child: Text(
+                        "Jenis-Jenis Gitar Umum",
+                        style: TextStyle(
+                          color: Color(0xFF82CBAB),
+                          fontSize: 25.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 30.0),
                   Container(
                     height: 300.0,
                     width: 320.0,

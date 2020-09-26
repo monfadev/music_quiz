@@ -8,6 +8,7 @@ class Jawaban extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(left: 50.0, right: 50.0),
       width: double.infinity,
       child: RaisedButton(
         textColor: Colors.white,
