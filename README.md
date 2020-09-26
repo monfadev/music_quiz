@@ -3,14 +3,11 @@
 A new Flutter project.
 
 ## Getting Started
+How to run this app:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone this sipitungflutter
+2. Open Visual Studio Code
+3. Direct folder myprojectmusic
+4. Ketika muncul notif "Get Packages" silahkan di tap jika tidak muncul terminal "flutter pub get"
+5. Open simulator android/ real device
+6. Open terminal and "flutter run"
