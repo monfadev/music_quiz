@@ -72,6 +72,10 @@ flutter:
       - assets/kunci2.jpeg
       - assets/kunci3.jpeg
       - assets/gitarelektrik.png
+      - assets/koesplus.png
+      - assets/lagudanchord.png
+      - assets/yangterdalam.png
+      - assets/alliwant.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

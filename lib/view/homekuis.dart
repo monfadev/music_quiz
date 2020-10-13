@@ -154,11 +154,12 @@ class _HomeKuisState extends State<HomeKuis> {
           children: [
             Center(
               child: Container(
-                padding: EdgeInsets.only(top: 650.0),
+                padding: EdgeInsets.only(top: 600.0),
                 child: RaisedButton(
                   onPressed: () {
-                    pertanyaan.shuffle();
-                    setState(() {});
+                    setState(() {
+                      pertanyaan.shuffle(); //TODO didalem setState
+                    });
                   },
                   child: Text("Acak Kuis"),
                 ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myprojectmusic/view/homekuis.dart';
 import 'package:myprojectmusic/view/kunci.dart';
+import 'package:myprojectmusic/view/lagu.dart';
 import 'package:myprojectmusic/view/pengenalan.dart';
 import 'package:myprojectmusic/view/settings.dart';
 
@@ -76,6 +77,23 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
                       image: DecorationImage(
                           image: AssetImage("assets/menu2.png"),
+                          fit: BoxFit.cover),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Lagu()));
+                  },
+                  child: Container(
+                    height: 150.0,
+                    width: 150.0,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      image: DecorationImage(
+                          image: AssetImage("assets/lagudanchord.png"),
                           fit: BoxFit.cover),
                     ),
                   ),
