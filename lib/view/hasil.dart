@@ -42,7 +42,7 @@ class Hasil extends StatelessWidget {
         Container(
           child: Center(
             child: Text(
-              'Anda Mendapat ' + hasilScore,
+              'Anda Mendapat nilai' + hasilScore,
               style: TextStyle(fontSize: 24, color: Colors.white),
             ),
           ),
