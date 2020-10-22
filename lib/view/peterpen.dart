@@ -35,7 +35,7 @@ class _PeterpenState extends State<Peterpen> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Container(
-                    height: 1200.0,
+                    height: 1000.0,
                     width: 500.0,
                     decoration: BoxDecoration(
                       color: Colors.transparent,

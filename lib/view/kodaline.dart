@@ -35,7 +35,7 @@ class _KodalineState extends State<Kodaline> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Container(
-                    height: 1200.0,
+                    height: 1100.0,
                     width: 500.0,
                     decoration: BoxDecoration(
                       color: Colors.transparent,

@@ -36,7 +36,7 @@ class _KoesplusState extends State<Koesplus> {
                 children: [
                   SizedBox(height: 30.0),
                   Container(
-                    height: 1000.0,
+                    height: 850.0,
                     width: 500.0,
                     decoration: BoxDecoration(
                       color: Colors.transparent,
