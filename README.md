@@ -1,13 +1,33 @@
-# myprojectmusic
+# Jago Gitar
 
-A new Flutter project.
+> Tutorial chord gitar and quiz apps
 
-## Getting Started
-How to run this app:
+<p><img  src="https://i.ibb.co/hVFV40m/Frame-1.png"/></p>
 
-1. Clone this sipitungflutter
-2. Open Visual Studio Code
-3. Direct folder myprojectmusic
-4. Ketika muncul notif "Get Packages" silahkan di tap jika tidak muncul terminal "flutter pub get"
-5. Open simulator android/ real device
-6. Open terminal and "flutter run"
+## Features
+
+- Tutorial audio and chord gitar
+- Materi about gitar
+- Random QUIZ
+
+## Techstack
+
+- Dart
+- Flutter SDK
+
+## Installing
+
+- git clone 
+- flutter packages get
+- flutter run
+
+## Release History
+
+- 1.0.0+1
+  - CHANGE: APK release
+
+## Credit
+
+monfauzi – [@monfadev](https://instagram.com/monfadev) – mfaauzii@gmail.com
+
+[https://github.com/monfauzi](https://github.com/monfauzi/)
